@@ -46,7 +46,6 @@ export const DireccionScreen = () => {
       newErrors.Ciudad = 'Por favor ingresa tu ciudad';
       valido = false;
     }
-    // Referencias es opcional, no requiere validación
 
     setErrors(newErrors);
     return valido;
@@ -109,7 +108,6 @@ export const DireccionScreen = () => {
             value={registro.Referencias}
             onChangeText={value => handleChange('Referencias', value)}
           />
-          {/* Referencias es opcional, pero puedes mostrar error si lo deseas */}
         </View>
 
         <View style={styles.switchContainer}>
@@ -131,11 +129,6 @@ export const DireccionScreen = () => {
     </ScrollView>
   );
 };
-
-// ...styles sin
-
-
-
 
 const styles = StyleSheet.create({
     container: {

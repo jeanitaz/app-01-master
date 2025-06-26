@@ -1,7 +1,6 @@
 import { StyleSheet, Text, View, TextInput, TouchableOpacity, Switch, Alert, ScrollView } from 'react-native'
 import React, { useState } from 'react'
 
-// RadioButton y Checkbox simples
 const RadioButton = ({ label, selected, onPress }: any) => (
   <TouchableOpacity style={styles.radioRow} onPress={onPress}>
     <View style={[styles.radioCircle, selected && styles.radioSelected]} />
@@ -125,23 +124,110 @@ export default function EncestaScreen() {
 }
 
 const styles = StyleSheet.create({
-  title: { fontSize: 22, fontWeight: 'bold', marginBottom: 18, textAlign: 'center', color: '#4f46e5' },
-  label: { fontSize: 15, fontWeight: '500', marginTop: 12, marginBottom: 4 },
-  input: { borderWidth: 1, borderColor: '#e2e8f0', borderRadius: 8, padding: 10, fontSize: 16, marginBottom: 4 },
-  radioRow: { flexDirection: 'row', alignItems: 'center', marginBottom: 6 },
-  radioCircle: { width: 20, height: 20, borderRadius: 10, borderWidth: 2, borderColor: '#4f46e5', marginRight: 8, justifyContent: 'center', alignItems: 'center' },
-  radioSelected: { backgroundColor: '#4f46e5' },
-  radioLabel: { fontSize: 15 },
-  checkboxRow: { flexDirection: 'row', alignItems: 'center', marginBottom: 6 },
-  checkboxBox: { width: 20, height: 20, borderWidth: 2, borderColor: '#4f46e5', marginRight: 8, borderRadius: 4, backgroundColor: '#fff' },
-  checkboxChecked: { backgroundColor: '#4f46e5' },
-  checkboxLabel: { fontSize: 15 },
-  sliderRow: { flexDirection: 'row', flexWrap: 'wrap', marginVertical: 8 },
-  sliderDot: { width: 28, height: 28, borderRadius: 14, borderWidth: 1, borderColor: '#4f46e5', justifyContent: 'center', alignItems: 'center', marginHorizontal: 2, marginVertical: 2 },
-  sliderDotSelected: { backgroundColor: '#4f46e5' },
-  sliderDotText: { color: '#1e293b', fontWeight: 'bold' },
-  switchRow: { flexDirection: 'row', alignItems: 'center', marginVertical: 12 },
-  switchLabel: { marginLeft: 8, fontSize: 15 },
-  button: { backgroundColor: '#4f46e5', borderRadius: 8, padding: 14, alignItems: 'center', marginTop: 10 },
-  buttonText: { color: 'white', fontSize: 16, fontWeight: '600' },
+  title: { 
+    fontSize: 22, 
+    fontWeight: 'bold', 
+    marginBottom: 18, 
+    textAlign: 'center', 
+    color: '#4f46e5' 
+  },
+  label: { 
+    fontSize: 15, 
+    fontWeight: '500', 
+    marginTop: 12, 
+    marginBottom: 4 
+  },
+  input: { 
+    borderWidth: 1,
+    borderColor: '#e2e8f0', 
+    borderRadius: 8, 
+    padding: 10, 
+    fontSize: 16, 
+    marginBottom: 4 
+  },
+  radioRow: { 
+    flexDirection: 'row', 
+    alignItems: 'center', 
+    marginBottom: 6 
+  },
+  radioCircle: { 
+    width: 20, 
+    height: 20, 
+    borderRadius: 10, 
+    borderWidth: 2, 
+    borderColor: '#4f46e5', 
+    marginRight: 8, 
+    justifyContent: 'center', 
+    alignItems: 'center' 
+  },
+  radioSelected: { 
+    backgroundColor: '#4f46e5' 
+  },
+  radioLabel: { 
+    fontSize: 15 
+  },
+  checkboxRow: { 
+    flexDirection: 'row', 
+    alignItems: 'center', 
+    marginBottom: 6 
+  },
+  checkboxBox: { 
+    width: 20, 
+    height: 20, 
+    borderWidth: 2, 
+    borderColor: '#4f46e5', 
+    marginRight: 8, 
+    borderRadius: 4, 
+    backgroundColor: '#fff' 
+  },
+  checkboxChecked: { 
+    backgroundColor: '#4f46e5' 
+  },
+  checkboxLabel: { 
+    fontSize: 15 
+  },
+  sliderRow: { 
+    flexDirection: 'row', 
+    flexWrap: 'wrap', 
+    marginVertical: 8 
+  },
+  sliderDot: { 
+    width: 28, 
+    height: 28, 
+    borderRadius: 14, 
+    borderWidth: 1, 
+    borderColor: '#4f46e5', 
+    justifyContent: 'center', 
+    alignItems: 'center', 
+    marginHorizontal: 2, 
+    marginVertical: 2 
+  },
+  sliderDotSelected: { 
+    backgroundColor: '#4f46e5' 
+  },
+  sliderDotText: { 
+    color: '#1e293b', 
+    fontWeight: 'bold' 
+  },
+  switchRow: { 
+    flexDirection: 'row', 
+    alignItems: 'center', 
+    marginVertical: 12 
+  },
+  switchLabel: { 
+    marginLeft: 8, 
+    fontSize: 15 
+  },
+  button: { 
+    backgroundColor: '#4f46e5', 
+    borderRadius: 8, 
+    padding: 14, 
+    alignItems: 'center', 
+    marginTop: 10 
+  },
+  buttonText: { 
+    color: 'white', 
+    fontSize: 16, 
+    fontWeight: '600' 
+  },
 });
